@@ -1,0 +1,97 @@
+
+.calculator{
+  display: grid;
+  /* width: 45%; */
+  margin: 0 auto;
+  width: 150px;
+  height: 250px;
+  grid-template-columns: repeat(6, minmax(20px, auto));
+  grid-template-rows: repeat(5, minmax(20px, auto));
+  grid-template-areas:
+    "d d d d d d"
+    "n n n n n o"
+    "n n n n n o"
+    "n n n n n o"
+    "n n n n n o";
+  box-shadow: 0 50px 100px rgba(50,50,93,.05), 0 15px 35px rgba(50,50,93,.1), 0 5px 15px rgba(0,0,0,.1);
+}
+button:focus {
+  outline: 0;
+}
+/*****************************/
+/*DISPLAY*/
+.displays{
+  grid-area: d;
+  /* border: 0.5px solid black; */
+  padding: 0 10px;
+}
+.display{
+  width: 100%;
+  background-color: white;
+  /* border: 0.5px solid orange; */
+}
+#result{
+  height: 30%;
+  text-align: right;
+  color: white;
+  overflow: scroll;
+  font-size: 0.8em;
+  /* border: 0.5px solid black; */
+}
+#current{
+  height: 70%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  font-size: 1.2em;
+  overflow: scroll;
+  color: white;
+  /* border: 0.5px solid red; */
+}
+/*****************************/
+/*NUMBERS*/
+.numbers{
+  /* border: 0.5px solid red; */
+  grid-area: n;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: black;
+
+}
+.number{
+  /* border: 0.5px solid green; */
+  border: none;
+  width: 33.334%;
+  background-color: black;
+  color: white;
+}
+.number:active{
+  background-color: silver;
+  color: black;
+}
+.zero{
+  grid-area: z;
+  /* border: 0.5px solid red; */
+}
+/*****************************/
+/*OPERATORS*/
+.operators{
+  grid-area: o;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  background-color: grey;
+}
+.operator{
+  padding: 0;
+  width: 100%;
+  height: 20%;
+  border: none;
+  background-color: grey;
+  margin: 0;
+}
+.operator:active{
+  background-color: red;
+  color: white;
+}
