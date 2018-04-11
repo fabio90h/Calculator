@@ -20,7 +20,7 @@ for (var i = 0; i < buttonsCount; i += 1) {
     else if (target === "CLR") {
       total = "";
       current.textContent = "World";
-      results.textContent = "Hello";
+      results.textContent = "Please enter numbers";
       current.style.cssText = "color: white";
       results.style.cssText = "color: white";
     }else if (target === "=") {
