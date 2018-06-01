@@ -7,7 +7,7 @@ var total = ""; //result int number;
 
 var buttons = document.querySelectorAll('button');
 var buttonsCount = buttons.length;
-for (var i = 0; i < buttonsCount; i += 1) {
+for (let i = 0; i < buttonsCount; i += 1) {
     buttons[i].onclick = function() {
     var target = document.querySelector("#" + this.id).textContent;
     if (target !== "CLR" && target !== "="){
