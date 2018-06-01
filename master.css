@@ -3,8 +3,8 @@
   display: grid;
   /* width: 45%; */
   margin: 0 auto;
-  width: 150px;
-  height: 250px;
+  width: 400px;
+  height: 600px;
   grid-template-columns: repeat(6, minmax(20px, auto));
   grid-template-rows: repeat(5, minmax(20px, auto));
   grid-template-areas:
@@ -35,7 +35,7 @@ button:focus {
   text-align: right;
   color: white;
   overflow: scroll;
-  font-size: 0.8em;
+  font-size: 1.5em;
   /* border: 0.5px solid black; */
 }
 #current{
@@ -43,7 +43,7 @@ button:focus {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
-  font-size: 1.2em;
+  font-size: 2.0em;
   overflow: scroll;
   color: white;
   /* border: 0.5px solid red; */
@@ -64,6 +64,7 @@ button:focus {
   border: none;
   width: 33.334%;
   background-color: black;
+  font-size: 1.3em;
   color: white;
 }
 .number:active{
@@ -90,6 +91,7 @@ button:focus {
   border: none;
   background-color: grey;
   margin: 0;
+  font-size: 1.3em;
 }
 .operator:active{
   background-color: red;
